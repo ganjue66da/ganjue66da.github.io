@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "测试博客""
+title: "测试"
 date:   2023-3-8
-tags: [测试]
+tags: [geek]
 comments: true
 author: wwq
 toc: true
@@ -19,7 +19,7 @@ toc: true
 
 ## 支持特性
 
-- 简约风格博客![1678257720679.png](image/2023-3-8-first_blog/1678257720679.png "测试图片")
+- 简约风格博客![1678257720679.png](./image/2023-3-8-first_blog/1678257720679.png "测试图片")
 - Powered By Jekyll
 - 博客文章搜索
 - 自定义社交链接
