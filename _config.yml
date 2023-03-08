@@ -66,7 +66,7 @@ gitalk:
   clientID: a5e560e875bd26bfa339
   clientSecret: 1749fab84099d5165e0f6dfd125214a46b2522b3
   repo: ganjue66da.github.io
-  owner: wwq
+  owner: ganjue66da
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 #google_analytics: 
