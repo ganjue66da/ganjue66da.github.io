@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: no
 title: "可能是最全面的github pages搭建个人博客教程"
 date:   2019-11-22
 tags: [geek]
 comments: true
 author: lemonchann
 ---
-
 作为一个程序员怎么能没有自己的个人博客呢，这里详细记录和分享我的博客搭建经验，让你轻轻松松拥有自己的博客网站。傻瓜式一站式教你用 github pages 来搭建博客，详细记录全过程，保证你能学会。
 
 如果你是非程序员或者不关系技术细节，只需花 3 分钟阅读前面 5 个章节内容，就能轻松拥有自己的博客。
@@ -15,41 +14,26 @@ author: lemonchann
 
 ## 开始
 
-话不多说，直接上图先来看下我的博客整体效果。[**点击在线预览我的博客**]( https://lemonchann.github.io/blog/)，个人比较喜欢这种简约的博客风格，不要花里胡哨但该有的功也都有。
+话不多说，直接上图先来看下我的博客整体效果。[**点击在线预览我的博客**](https://lemonchann.github.io/blog/)，个人比较喜欢这种简约的博客风格，不要花里胡哨但该有的功也都有。
 
 ![blogPage](https://raw.githubusercontent.com/lemonchann/lemonchann.github.io/master/images/2019-11-22-create_blog_with_github_pages/blogPage.png)
-
-
 
 下面列举这个博客具有的功能特性，其中我比较看重归档和搜索能力。
 
 ### 支持特性
 
 - 简约风格博客
-
 - Powered By Jekyll
-
 - 博客文章搜索
-
 - 自定义社交链接
-
 - 网站访客统计
-
 - Google Analytics 网站分析
-
 - Gitalk评论功能
-
 - 自定义关于about页面
-
 - 支持中文布局
-
 - 支持归档与标签
-
 - 支持改变主题颜色
-
 - 支持添加文章目录
-
-  
 
 ## 建立博客Git仓库
 
@@ -60,8 +44,6 @@ author: lemonchann
 ![fork博客](https://raw.githubusercontent.com/lemonchann/lemonchann.github.io/master/images/2019-11-22-create_blog_with_github_pages/fork%E5%8D%9A%E5%AE%A2.png)
 
 **版权声明： fork之后_posts文件夹内容是我的博客文章，版权归我所有。你可以选择删除里面的文章替换上自己的博客文章，如需转载需要与我联系授权 **。
-
-
 
 ## 修改博客仓库名称
 
@@ -93,7 +75,7 @@ author: lemonchann
 
 这里配置社交链接按钮，没配的不显示，我现在配了知乎、邮箱、github账号三个。其他你想加自己加上就可以。
 
-###  配置gitalk
+### 配置gitalk
 
 这个是评论功能的配置。评论功能基于gitalk，在配置文件中找到gitalk配置项目：
 
@@ -115,7 +97,7 @@ gitalk:
 
 ### Google站长统计
 
-首先你要去注册一个[Google Analytics]( https://analytics.google.com/analytics/ )账号，它可以统计你博客网站的访问人数，访问来源等非常丰富的网站数据。如果你不在乎可以不用跳过这节。不过要把配置中我的`google_analytics: UA-XXXXXXX-X`删除，**否则统计到我的去了**。
+首先你要去注册一个[Google Analytics](https://analytics.google.com/analytics/)账号，它可以统计你博客网站的访问人数，访问来源等非常丰富的网站数据。如果你不在乎可以不用跳过这节。不过要把配置中我的 `google_analytics: UA-XXXXXXX-X`删除，**否则统计到我的去了**。
 
 ```
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
@@ -146,15 +128,13 @@ url: https://yourname.github.io
 
 **done! 现在输入上面提到的博客地址，回车，你拥有了自己的博客。**
 
-
-
 ## 如何写博客
 
 好了，博客有了。如何更新文章呢？
 
 文章用markdown语法，写好统一放在_post文件夹下上传，git page会自动从你的git仓库拉去解析成网页，立刻就能在你的博客网页浏览。
 
-关于文章的**命名格式**：博客文章必须按照统一的命名格式 `yyyy-mm-dd-blogName.md` 比如我这篇博客的名字是`2019-11-22-create_blog_with_github_pages.md`
+关于文章的**命名格式**：博客文章必须按照统一的命名格式 `yyyy-mm-dd-blogName.md` 比如我这篇博客的名字是 `2019-11-22-create_blog_with_github_pages.md`
 
 **看到这里，如果只是简单的想写博客，后面的不看也可以了，你已经拥有了自己的博客！后面章节是记录一些DIY的过程。**
 
@@ -162,15 +142,13 @@ url: https://yourname.github.io
 
 ![公众号二维码](https://upload-images.jianshu.io/upload_images/7842464-15f939ec039690f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
-
 ## 本地博客预览
 
 到目前为止，我们提交的文章都是必须上传到github仓库才能预览。如果你想写完在本地浏览器看一下效果在上传也是可以的，因为不是所有人都有这样的需求。
 
-###  安装 Ruby 和 DevKit
+### 安装 Ruby 和 DevKit
 
-在官网下载，[点这里]( https://rubyinstaller.org/downloads/ )下载适合系统版本的 [Ruby+Devkit](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.6.5-1/rubyinstaller-devkit-2.6.5-1-x64.exe) 包。安装，弹出的窗口选3
+在官网下载，[点这里](https://rubyinstaller.org/downloads/)下载适合系统版本的 [Ruby+Devkit](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.6.5-1/rubyinstaller-devkit-2.6.5-1-x64.exe) 包。安装，弹出的窗口选3
 
 ![安装ruby](https://github.com/lemonchann/lemonchann.github.io/raw/master/images/2019-11-22-create_blog_with_github_pages/%E5%AE%89%E8%A3%85ruby.PNG)
 
@@ -184,10 +162,9 @@ url: https://yourname.github.io
 
 ### bundler安装
 
-`gem install bundler` 安装bundler 
+`gem install bundler` 安装bundler
 
-`bundle -v 查看版本
- bundle config mirror.https://rubygems.org https://gems.ruby-china.com` 切换安装源
+`bundle -v 查看版本  bundle config mirror.https://rubygems.org https://gems.ruby-china.com` 切换安装源
 
 ### 安装jekyll
 
@@ -209,7 +186,7 @@ url: https://yourname.github.io
 
 ![jekyll_error](https://github.com/lemonchann/lemonchann.github.io/raw/master/images/2019-11-22-create_blog_with_github_pages/jekyll_error.PNG)
 
-如图，缺少jekyll-paginate，安装即可`gem install jekyll-paginate`若还提示缺少就装啥。
+如图，缺少jekyll-paginate，安装即可 `gem install jekyll-paginate`若还提示缺少就装啥。
 
 ![jekyll_server_erro错误2](https://github.com/lemonchann/lemonchann.github.io/raw/master/images/2019-11-22-create_blog_with_github_pages/jekyll_server_erro%E9%94%99%E8%AF%AF2.PNG)
 
@@ -221,18 +198,13 @@ url: https://yourname.github.io
 
 出现这个错误一般是4000端口被占用了，解决方法：
 
-1.  netstat -ano|findstr "4000" 找到占用4000端口的进程ID
-
+1. netstat -ano|findstr "4000" 找到占用4000端口的进程ID
 2. 查看最后一列数字就是PID=312964
    ![查看netstat](https://raw.githubusercontent.com/lemonchann/lemonchann.github.io/master/images/2019-11-22-create_blog_with_github_pages/%E6%9F%A5%E7%9C%8Bnetstat.png)
-
 3. 打开windows资源管理器，结束该进程.
 
    ![任务管理器](https://raw.githubusercontent.com/lemonchann/lemonchann.github.io/master/images/2019-11-22-create_blog_with_github_pages/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%99%A8.png)
-
 4. `$ tasklist|findstr 312964`也能查看进程名，查到结束掉他同步骤3.
-
-   
 
 ## 搜索功能集成
 
@@ -291,8 +263,6 @@ url: https://yourname.github.io
 
 [html插入标签样式方法](https://blog.csdn.net/u014103733/article/details/72961366)
 
-
-
 ## 社交链接
 
 模板提供的链接没有知乎链接，或者你想增加自定义的链接，都可以通过以下方法添加。以增加zhihu链接为例
@@ -301,7 +271,7 @@ url: https://yourname.github.io
 
 [viewBox](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/viewBox)
 
-> viewBox属性的值是一个包含4个参数的列表 `min-x`, `min-y`, `width` and `height`， 以空格或者逗号分隔开， 在用户空间中指定一个矩形区域映射到给定的元素,查看属性 
+> viewBox属性的值是一个包含4个参数的列表 `min-x`, `min-y`, `width` and `height`， 以空格或者逗号分隔开， 在用户空间中指定一个矩形区域映射到给定的元素,查看属性
 
 [深入简出 SVG 教程](https://zhuanlan.zhihu.com/p/36138381)
 
@@ -327,11 +297,9 @@ footer-links:
 
 上面配置内容应该都能理解，`viewBox` 指定图片大小。
 
-主要是`path d=` 内容的获取，这里其实是指定svg图片的内容，我们可以从 [这里](https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/brands/)获取到大部分svg素材，比如知乎的svg[在这](https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/brands/zhihu.svg)，点`raw` 按钮查看源文件，复制`path d=`后面的内容到上面的配置即可。
+主要是 `path d=` 内容的获取，这里其实是指定svg图片的内容，我们可以从 [这里](https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/brands/)获取到大部分svg素材，比如知乎的svg[在这](https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/brands/zhihu.svg)，点 `raw` 按钮查看源文件，复制 `path d=`后面的内容到上面的配置即可。
 
 ![zhihuSvg](https://raw.githubusercontent.com/lemonchann/lemonchann.github.io/master/images/2019-11-22-create_blog_with_github_pages/zhihuSvg.png)
-
-
 
 ## 添加网站计数
 
@@ -369,15 +337,13 @@ eg.  `style="font-family:arial;color:Gainsboro;font-size:10px; text-align:right;
 
 `red, pink, grape, violet, indigo, blue, cyan, teal, green, lime, yellow`
 
-修改文件`_sass/_variables.scss`，将文件中当前颜色，比如当前是 `grape` 全部替换成你想要的颜色即可。
+修改文件 `_sass/_variables.scss`，将文件中当前颜色，比如当前是 `grape` 全部替换成你想要的颜色即可。
 
 ## 显示文章目录
 
 在文章开头信息中心增加 `toc: true` 描述即可打开文章目录显示。效果如下：
 
 ![文章带目录](https://i.loli.net/2020/07/12/TFlRj3kBdpocY9K.png)
-
-
 
 ## 如何传图片
 
@@ -393,8 +359,6 @@ PicGo支持图片上传github、SM.MS图床、阿里云、腾讯云等主流图�
 
 [好用的github插件](https://blog.csdn.net/u012702547/article/details/100533763)
 
-
-
 ## 网站结构
 
 根目录的index.html生成blog首页
@@ -403,8 +367,6 @@ _include/footer.html生成侧边栏
 
 _include/svg-icons.html生成社交头像的链接
 
-
-
 ## 致谢
 
 感谢 [Jekyll](https://www.jekyll.com.cn/) 提供的技术支持才能有这个博客。
@@ -412,5 +374,3 @@ _include/svg-icons.html生成社交头像的链接
 感谢 [LOFFER ](https://fromendworld.github.io/LOFFER/document/)提供的原始模板，我在其上进行的二次开发。
 
 **我的个人技术公众号「后端技术学堂」分享、记录、成长，扫码添加，一起学习，共同成长。**
-
-![公众号二维码](https://upload-images.jianshu.io/upload_images/7842464-15f939ec039690f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
